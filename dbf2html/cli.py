@@ -94,5 +94,5 @@ def cli(filepath, encoding, output, title):
             content += "<td>" + str(item) + "</td>\n"
         content += "</tr>\n"
     content += "</table></body></html>"
-    with open(output, "w") as f:
+    with open(output, "w", encoding="utf-8") as f:
         f.write(content)
